@@ -26,8 +26,9 @@ RUN unzip nordic_sdk.zip -d /opt/nordic
 RUN rm nordic_sdk.zip
 
 COPY Makefile.posix $SDK_ROOT/components/toolchain/gcc/Makefile.posix
-COPY JLink_Linux_V766g_x86_64.tgz $SDK_ROOT/JLINK.tgz
-RUN tar xf JLINK.tgz
+COPY JLink_Linux_V766g_x86_64.rpm $SDK_ROOT/JLINK.rpm
+#COPY JLink_Linux_V766g_x86_64.tgz $SDK_ROOT/JLINK.tgz
+#RUN tar xf JLINK.tgz
 
 #Install JLINK from https://www.segger.com/downloads/jlink/JLink_Linux_V766g_x86_64.tgz
 #change configuration options 
