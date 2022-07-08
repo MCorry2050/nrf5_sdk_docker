@@ -33,4 +33,4 @@ COPY JLink_Linux_V766g_x86_64.deb $SDK_ROOT/JLINK.deb
 #Install JLINK from https://www.segger.com/downloads/jlink/JLink_Linux_V766g_x86_64.tgz
 #change configuration options 
 
-run "docker build -t="nrf5_sdk_docker" github.com/MCorry2050/nrf5_sdk_docker"
+#run "docker build -t="nrf5_sdk_docker" github.com/MCorry2050/nrf5_sdk_docker"
